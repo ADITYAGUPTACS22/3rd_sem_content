@@ -1,0 +1,540 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang2057{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 1. What will be the output of the following C code?\par
+\u8203?\par
+#include<stdio.h>\par
+#define san 10\par
+main()\par
+\{\par
+    #ifdef san\par
+    #define san 20\par
+    #endif\par
+    printf("%d",san);\par
+\}\par
+a) 10\par
+b) 20\par
+c) Error\par
+d) 1020\par
+\u8203?\par
+\u8203?\par
+2. What will be the output of the following C code?\par
+\u8203?\par
+\u8203?\par
+#include<stdio.h>\par
+#define hello \par
+main()\par
+\{\par
+    #ifdef hello\par
+    #define hi 4\par
+    #else\par
+    #define hi 5\par
+    #endif\par
+    printf("%d",hi);\par
+ \par
+\}\par
+a) 4\par
+b) 5\par
+c) 45\par
+d) error\par
+\u8203?\par
+\u8203?\par
+3. The purpose of the preprocessor directive #error is that ____________\par
+a) It rectifies any error present in the code\par
+b) It rectifies only the first error which occurs in the code\par
+c) It causes the preprocessor to report a fatal error\par
+d) It causes the preprocessor to ignore an error\par
+\u8203?\par
+\u8203?\par
+4. What will be the output of the following C code?\par
+\u8203?\par
+#include<stdio.h>\par
+#define max 20\par
+main()\par
+\{\par
+    #ifndef max\par
+    #define min 10\par
+    #else\par
+    #define min 30\par
+    #endif\par
+    printf("%d",min);\par
+\}\par
+a) 10\par
+b) 20\par
+c) 30\par
+d) error\par
+\u8203?\par
+\u8203?\par
+5. What will be the output of the following C code?\par
+\u8203?\par
+#include<stdio.h>\par
+#define hello 10\par
+main()\par
+\{\par
+    #ifdef hello\par
+    #undef hello\par
+    #define hello 100\par
+    #else\par
+    #define hello 200\par
+    #endif\par
+    printf("%d",hello);\par
+\}\par
+a) Error\par
+b) 10\par
+c) 100\par
+d) 200\par
+6. What will be the output of the following C code?\par
+\u8203?\par
+#include<stdio.h>\par
+#define max 100\par
+main()\par
+\{\par
+    #ifdef max\par
+    printf("hello");\par
+\}\par
+a) 100\par
+b) hello\par
+c) \ldblquote hello\rdblquote\par
+d) error\par
+\u8203?\par
+\u8203?\par
+7. _______________ is the preprocessor directive which is used to end the scope of #ifdef.\par
+a) #elif\par
+b) #ifndef\par
+c) #endif\par
+d) #if\par
+\u8203?\par
+\u8203?\par
+8. What will be the output of the following C code?\par
+\u8203?\par
+#include<stdio.h>\par
+void main()\par
+\{\par
+    #ifndef max\par
+    printf("hello");\par
+    #endif\par
+    printf("hi");\par
+\}\par
+a) hello\par
+b) hellohi\par
+c) error\par
+d) hi\par
+\u8203?\par
+\u8203?\par
+9. What will be the output of the following C code?\par
+\u8203?\par
+#include<stdio.h>\par
+#define san 557\par
+int main()\par
+\{\par
+    #ifndef san\par
+    printf("yes");\par
+    #endif\par
+    printf("no");\par
+\}\par
+a) error\par
+b) yes\par
+c) no\par
+d) yesno\par
+\u8203?\par
+\u8203?\par
+10. The preprocessor directive which checks whether a constant expression results in a zero or non-zero value __________\par
+a) #if\par
+b) #ifdef\par
+c) #undef\par
+d) #ifndef\par
+\u8203?\par
+\u8203?\par
+11. What will be the output of the following C code?\par
+\u8203?\par
+#include<stdio.h>\par
+#define max 100\par
+void main()\par
+\{\par
+    #if(max%10)\par
+    printf("san");\par
+    #endif\par
+    printf("foundry");\par
+\}\par
+a) error\par
+b) san\par
+c) foundry\par
+d) sanfoundry\par
+\u8203?\par
+\u8203?\par
+12. The preprocessor directive which is used to remove the definition of an identifier which was previously defined with #define?\par
+a) #ifdef\par
+b) #undef\par
+c) #ifndef\par
+d) #def\par
+\u8203?\par
+\u8203?\par
+13. What will be the output of the following C code?\par
+\u8203?\par
+#include<stdio.h>\par
+#define hello 10\par
+void main()\par
+\{\par
+    printf("%d",hello);\par
+    #undef hello\par
+    printf("%d",hello);\par
+\}\par
+a) 10\par
+b) hello\par
+c) error\par
+d) 1010\par
+\u8203?\par
+\u8203?\par
+14. What will be the output of the following C code?\par
+\u8203?\par
+#include <stdio.h>\par
+#define a 2\par
+main()\par
+\{\par
+    int r;\par
+    #define a 5\par
+    r=a*2;\par
+    printf("%d",r);\par
+\}\par
+a) 10\par
+b) 4\par
+c) 2\par
+d) 5\par
+\u8203?\par
+\u8203?\par
+15. What will be the output of the following C code if the value of \lquote p\rquote  is 10 and that of \lquote q\rquote  is 15?\par
+\u8203?\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+    int p,q;\par
+    printf("Enter two numbers\\n");\par
+    scanf("%d",&p);\par
+    scanf("%d",&q);\par
+    #if(4<2)\par
+    printf("%d",p);\par
+    #elif(2>-1)\par
+    printf("%d",q);\par
+    #else\par
+    printf("bye");\par
+    #endif\par
+\}\par
+a) 10\par
+b) 15\par
+c) bye\par
+d) error\par
+\u8203?\par
+16. What will be the output of the following C code?\par
+\u8203?\par
+    #include <stdio.h>\par
+    int main()\par
+    \{\par
+        int c = 2 ^ 3;\par
+        printf("%d\\n", c);\par
+    \}\par
+a) 1\par
+b) 8\par
+c) 9\par
+d) 0\par
+\u8203?\par
+\u8203?\par
+17. What will be the output of the following C code?\par
+\u8203?\par
+\u8203?\par
+    #include <stdio.h>\par
+    int main()\par
+    \{\par
+        unsigned int a = 10;\par
+        a = ~a;\par
+        printf("%d\\n", a);\par
+    \}\par
+a) -9\par
+b) -10\par
+c) -11\par
+d) 10\par
+\u8203?\par
+\u8203?\par
+18. What will be the output of the following C code?\par
+\u8203?\par
+    #include <stdio.h>\par
+    int main()\par
+    \{\par
+        if (7 & 8)\par
+        printf("Honesty");\par
+            if ((~7 & 0x000f) == 8)\par
+                printf("is the best policy\\n");\par
+    \}\par
+a) Honesty is the best policy\par
+b) Honesty\par
+c) is the best policy\par
+d) No output\par
+\u8203?\par
+\u8203?\par
+19. What will be the output of the following C code?\par
+\u8203?\par
+    #include <stdio.h>\par
+    int main()\par
+    \{\par
+        int a = 2;\par
+        if (a >> 1)\par
+           printf("%d\\n", a);\par
+    \}\par
+a) 0\par
+b) 1\par
+c) 2\par
+d) No Output\par
+\u8203?\par
+\u8203?\par
+20. Comment on the output of the following C code.\par
+\u8203?\par
+    #include <stdio.h>\par
+    int main()\par
+    \{\par
+        int i, n, a = 4;\par
+        scanf("%d", &n);\par
+        for (i = 0; i < n; i++)\par
+            a = a * 2;\par
+    \}\par
+a) Logical Shift left\par
+b) No output\par
+c) Arithmetic Shift right\par
+d) Bitwise exclusive OR\par
+\u8203?\par
+\u8203?\par
+21. What will be the output of the following C code?\par
+\u8203?\par
+    #include <stdio.h>\par
+    void main()\par
+    \{\par
+        int x = 97;\par
+        int y = sizeof(x++);\par
+        printf("x is %d", x);\par
+    \}\par
+a) x is 97\par
+b) x is 98\par
+c) x is 99\par
+d) Run time error\par
+\u8203?\par
+\u8203?\par
+22. What will be the output of the following C code?\par
+\u8203?\par
+    #include <stdio.h>\par
+    void main()\par
+    \{\par
+        int x = 4, y, z;\par
+        y = --x;\par
+        z = x--;\par
+        printf("%d%d%d", x, y, z);\par
+    \}\par
+a) 3 2 3\par
+b) 2 2 3\par
+c) 3 2 2\par
+d) 2 3 3\par
+\u8203?\par
+23. What will be the output of the following C code?\par
+\u8203?\par
+    #include <stdio.h>\par
+    void main()\par
+    \{\par
+        int x = 4;\par
+        int *p = &x;\par
+        int *k = p++;\par
+        int r = p - k;\par
+        printf("%d", r);\par
+    \}\par
+a) 4\par
+b) 8\par
+c) 1\par
+d) Run time error\par
+24 What will be the output of the following C code?\par
+\u8203?\par
+    #include <stdio.h>\par
+    void main()\par
+    \{\par
+        int a = 5, b = -7, c = 0, d;\par
+        d = ++a && ++b || ++c;\par
+        printf("\\n%d%d%d%d", a, b, c, d);\par
+    \}\par
+a) 6 -6 0 0\par
+b) 6 -5 0 1\par
+c) -6 -6 0 1\par
+d) 6 -6 0 1\par
+\u8203?\par
+\u8203?\par
+25. What will be the output of the following C code?\par
+\u8203?\par
+    #include <stdio.h>\par
+    void main()\par
+    \{\par
+        int a = -5;\par
+        int k = (a++, ++a);\par
+        printf("%d\\n", k);\par
+    \}\par
+a) -3\par
+b) -5\par
+c) 4\par
+d) Undefined\par
+\u8203?\par
+\u8203?\par
+26. What will be the output of the following C code?\par
+\u8203?\par
+    #include <stdio.h>\par
+    int main()\par
+    \{\par
+        int x = 2;\par
+        x = x << 1;\par
+        printf("%d\\n", x);\par
+    \}\par
+a) 4\par
+b) 1\par
+c) Depends on the compiler\par
+d) Depends on the endianness of the machine\par
+\u8203?\par
+\u8203?\par
+27. What will be the output of the following C code?\par
+\u8203?\par
+    #include <stdio.h>\par
+    int main()\par
+    \{\par
+        int x = -2;\par
+        x = x >> 1;\par
+        printf("%d\\n", x);\par
+    \}\par
+a) 1\par
+b) -1\par
+c) 2 31 \f1\endash  1 considering int to be 4 bytes\par
+d) Either -1 or 1\par
+\u8203?\par
+\u8203?\par
+28. What will be the output of the following C code?\par
+\u8203?\par
+    #include <stdio.h>\par
+    int main()\par
+    \{\par
+        if (~0 == 1)\par
+            printf("yes\\n");\par
+        else\par
+            printf("no\\n");\par
+    \}\par
+a) yes\par
+b) no\par
+c) compile time error\par
+d) undefined\par
+\u8203?\par
+\u8203?\par
+29. What will be the output of the following C code?\par
+\u8203?\par
+    #include <stdio.h>\par
+    int main()\par
+    \{\par
+        int x = -2;\par
+        if (!0 == 1)\par
+            printf("yes\\n");\par
+        else\par
+            printf("no\\n");\par
+    \}\par
+a) yes\par
+b) no\par
+c) run time error\par
+d) undefined\par
+\u8203?\par
+\u8203?\par
+30. What will be the output of the following C code?\par
+\u8203?\par
+    #include <stdio.h>\par
+    int main()\par
+    \{\par
+        int y = 0;\par
+        if (1 |(y = 1))\par
+            printf("y is %d\\n", y);\par
+        else\par
+            printf("%d\\n", y);\par
+ \par
+    \}\par
+a) y is 1\par
+b) 1\par
+c) run time error\par
+d) undefined\par
+\u8203?\par
+\u8203?\par
+31. What will be the output of the following C code?\par
+\u8203?\par
+    #include <stdio.h>\par
+    int main()\par
+    \{\par
+        int y = 1;\par
+        if (y & (y = 2))\par
+            printf("true %d\\n", y);\par
+        else\par
+            printf("false %d\\n", y);\par
+ \par
+    \}\par
+a) true 2\par
+b) false 2\par
+c) either true 2 or false 2\par
+d) true 1\par
+\u8203?\par
+\u8203?\par
+\u8203?\par
+\u8203?\par
+32 What will be the value of the following C expression?\par
+\u8203?\par
+ (x = fun()) != 1 considering fun() returns 2\par
+a) 2\par
+b) True\par
+c) 1\par
+d) 0\par
+\u8203?\par
+33. Operation \ldblquote a = a * b + a\rdblquote  can also be written as ___________\par
+a) a *= b + 1;\par
+b) (c = a * b)!=(a = c + a);\par
+c) a = (b + 1)* a;\par
+d) All of the mentioned\par
+\u8203?\par
+\u8203?\par
+34. What will be the final value of c in the following C statement? (Initial value: c = 2)\par
+\u8203?\par
+c <<= 1;\par
+a) c = 1;\par
+b) c = 2;\par
+c) c = 3;\par
+d) c = 4;\par
+\u8203?\par
+\u8203?\par
+35. What will be the output of the following C code?\par
+\u8203?\par
+    #include <stdio.h>\par
+    int main()\par
+    \{\par
+        int a = 1, b = 2;\par
+        a += b -= a;\par
+        printf("%d %d", a, b);\par
+    \}\par
+a) 1 1\par
+b) 1 2\par
+c) 2 1\par
+d) 2 2\par
+\u8203?\par
+\u8203?\par
+36. What will be the output of the following C code?\par
+\u8203?\par
+    #include <stdio.h>\par
+    int main()\par
+    \{\par
+        int a = 4, n, i, result = 0;\par
+        scanf("%d", &n);\par
+        for (i = 0;i < n; i++)\par
+        result += a;\par
+    \}\par
+a) Addition of a and n\par
+b) Subtraction of a and n\par
+c) Multiplication of a and n\par
+d) Division of a and n\par
+\u8203?\par
+\u8203?\par
+37. Which of the following is an invalid assignment operator?\par
+a) a %= 10;\par
+b) a /= 10;\par
+c) a |= 10;\par
+d) None of the mentioned\f0\par
+}
+ 
